@@ -6,7 +6,7 @@
 /*   By: atran <atran@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/15 21:27:55 by atran             #+#    #+#             */
-/*   Updated: 2025/12/16 13:49:28 by atran            ###   ########.fr       */
+/*   Updated: 2025/12/16 14:37:40 by atran            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,19 +15,9 @@
 
 int main(void)
 {
-    std::cout << "==========stackZombie==========" <<std::endl;
-    Zombie a("Munchy");
-    Zombie b("Chewbecca");
-
-    a.announce();
-    b.announce();
-    randomChump("randomStranger");
-
-    std::cout << "==========heapZombie==========" <<std::endl;
-    Zombie *heapZombie;
-    heapZombie = newZombie("Rotten");
-    heapZombie->announce();
-    delete heapZombie;
-    
-    std::cout << "==========end of main==========" <<std::endl;
+    Zombie* Zhorde;
+    Zhorde = zombieHorde(5, "RotBrother");
+    for (int i = 0; i < 5; i++)
+        Zhorde[i].announce();
+    delete[] Zhorde;
 }

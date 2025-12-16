@@ -6,7 +6,7 @@
 /*   By: atran <atran@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/15 15:31:27 by atran             #+#    #+#             */
-/*   Updated: 2025/12/15 21:26:32 by atran            ###   ########.fr       */
+/*   Updated: 2025/12/16 13:43:12 by atran            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,10 @@ class Zombie
     public:
         Zombie(std::string name);
         ~Zombie();
-        void annouce();
-
-    Zombie *newZombie(std::string name);
-    void randomChump(std::string name);
+        void announce(void);
 };
+
+Zombie *newZombie(std::string name);
+void randomChump(std::string name);
 
 #endif
