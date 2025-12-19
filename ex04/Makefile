@@ -6,13 +6,13 @@
 #    By: atran <atran@student.hive.fi>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/09 11:16:10 by atran             #+#    #+#              #
-#    Updated: 2025/12/17 13:05:40 by atran            ###   ########.fr        #
+#    Updated: 2025/12/19 17:35:45 by atran            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = violence
+NAME = sed
 
-SRCS = main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
+SRCS = main.cpp
 
 OBJS = $(SRCS:%.cpp=%.o)
 
